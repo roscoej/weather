@@ -38,6 +38,7 @@ class MapViewController: UIViewController {
     // MARK: - Private Functions
     private func setupUI() {
         mapView.showsUserLocation = true
+        mapView.setCameraZoomRange(MKMapView.CameraZoomRange(minCenterCoordinateDistance: 20000, maxCenterCoordinateDistance: 5000000), animated: true)
         
         let longpressGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress))
         mapView.addGestureRecognizer(longpressGesture)

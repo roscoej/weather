@@ -58,20 +58,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P8G-OV-1cx">
-                                                    <rect key="frame" x="32" y="11" width="40" height="40"/>
+                                                    <rect key="frame" x="32" y="11" width="50" height="50"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="40" id="Zt2-zS-lok"/>
-                                                        <constraint firstAttribute="height" constant="40" id="iyK-F3-Ybu"/>
+                                                        <constraint firstAttribute="width" constant="50" id="Zt2-zS-lok"/>
+                                                        <constraint firstAttribute="height" constant="50" id="iyK-F3-Ybu"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLG-SK-vpB">
-                                                    <rect key="frame" x="84" y="17.5" width="298" height="27"/>
+                                                    <rect key="frame" x="94" y="22.5" width="288" height="27"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBc-Js-yfq">
-                                                    <rect key="frame" x="84" y="52.5" width="45" height="20.5"/>
+                                                    <rect key="frame" x="94" y="57.5" width="45" height="15.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -125,8 +125,8 @@
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind Degree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUs-GA-Qx4">
-                                                    <rect key="frame" x="32" y="135" width="100" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind Direction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUs-GA-Qx4">
+                                                    <rect key="frame" x="32" y="135" width="113" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -149,18 +149,20 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeW-T9-Y4T">
-                                                    <rect key="frame" x="185" y="134.5" width="44" height="22"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWS-Iv-gfd">
                                                     <rect key="frame" x="185" y="47.5" width="44" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MFX-B2-PQM">
+                                                    <rect key="frame" x="191" y="130.5" width="32" height="30"/>
+                                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="32" id="7Ph-lQ-LZP"/>
+                                                        <constraint firstAttribute="width" constant="32" id="cWY-e0-SGo"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="aR6-7d-ChS" firstAttribute="leading" secondItem="qSj-fs-7x4" secondAttribute="leading" id="6b6-4h-OtR"/>
@@ -170,7 +172,6 @@
                                                 <constraint firstItem="MWS-Iv-gfd" firstAttribute="leading" secondItem="qSj-fs-7x4" secondAttribute="leading" id="Pi3-zZ-hXg"/>
                                                 <constraint firstItem="h8x-GT-EXq" firstAttribute="leading" secondItem="NdX-gQ-8s6" secondAttribute="leading" id="PjO-Yp-AbJ"/>
                                                 <constraint firstItem="NdX-gQ-8s6" firstAttribute="leading" secondItem="3bT-iM-0Fg" secondAttribute="leading" id="S0j-4A-hMU"/>
-                                                <constraint firstItem="IeW-T9-Y4T" firstAttribute="centerY" secondItem="uUs-GA-Qx4" secondAttribute="centerY" id="UB5-RR-QXD"/>
                                                 <constraint firstItem="uUs-GA-Qx4" firstAttribute="leading" secondItem="zLJ-Uf-eag" secondAttribute="leading" id="VsE-cY-aqr"/>
                                                 <constraint firstItem="zLJ-Uf-eag" firstAttribute="top" secondItem="h8x-GT-EXq" secondAttribute="bottom" constant="8" id="ZgH-il-vZK"/>
                                                 <constraint firstItem="qSj-fs-7x4" firstAttribute="centerX" secondItem="gaz-4m-tGv" secondAttribute="centerX" id="Zhn-6G-TmR"/>
@@ -179,18 +180,19 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="uUs-GA-Qx4" secondAttribute="bottom" constant="8" id="c3b-iz-ajs"/>
                                                 <constraint firstItem="NdX-gQ-8s6" firstAttribute="top" secondItem="3bT-iM-0Fg" secondAttribute="bottom" constant="8" id="fuq-Vc-kF7"/>
                                                 <constraint firstItem="aR6-7d-ChS" firstAttribute="centerY" secondItem="h8x-GT-EXq" secondAttribute="centerY" id="juf-Ee-cL1"/>
-                                                <constraint firstItem="IeW-T9-Y4T" firstAttribute="leading" secondItem="qSj-fs-7x4" secondAttribute="leading" id="kdm-BM-hkx"/>
                                                 <constraint firstItem="qSj-fs-7x4" firstAttribute="centerY" secondItem="3bT-iM-0Fg" secondAttribute="centerY" id="ldK-rh-DWN"/>
                                                 <constraint firstItem="3bT-iM-0Fg" firstAttribute="leading" secondItem="gaz-4m-tGv" secondAttribute="leadingMargin" constant="12" id="oog-Kd-QkQ"/>
+                                                <constraint firstItem="MFX-B2-PQM" firstAttribute="centerX" secondItem="gaz-4m-tGv" secondAttribute="centerX" id="q8c-Ef-AQH"/>
                                                 <constraint firstItem="3bT-iM-0Fg" firstAttribute="top" secondItem="gaz-4m-tGv" secondAttribute="topMargin" constant="8" id="z9c-j2-QFm"/>
+                                                <constraint firstItem="MFX-B2-PQM" firstAttribute="centerY" secondItem="uUs-GA-Qx4" secondAttribute="centerY" id="zfo-W0-s8m"/>
                                                 <constraint firstItem="nwh-bY-qdQ" firstAttribute="leading" secondItem="qSj-fs-7x4" secondAttribute="leading" id="zkq-WK-yrf"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="imvWindDirection" destination="MFX-B2-PQM" id="kO0-FY-jvh"/>
                                             <outlet property="lblHumidity" destination="aR6-7d-ChS" id="1Pq-is-gYE"/>
                                             <outlet property="lblPressure" destination="MWS-Iv-gfd" id="GCU-AK-g9u"/>
                                             <outlet property="lblTemp" destination="qSj-fs-7x4" id="4tA-t6-7rX"/>
-                                            <outlet property="lblWindDegree" destination="IeW-T9-Y4T" id="IAL-tm-OXh"/>
                                             <outlet property="lblWindSpeed" destination="nwh-bY-qdQ" id="hW3-mI-uk1"/>
                                         </connections>
                                     </tableViewCell>
@@ -240,4 +242,7 @@
             <point key="canvasLocation" x="323" y="139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow.down" catalog="system" width="120" height="128"/>
+    </resources>
 </document>

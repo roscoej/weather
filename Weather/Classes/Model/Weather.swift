@@ -44,7 +44,7 @@ class Weather {
     
     // MARK: - Methods
     public func getIconURL() -> String {
-        return "http://openweathermap.org/img/wn/\(icon).png"
+        return "http://openweathermap.org/img/wn/\(icon)@2x.png"
     }
     
     public func saveToUserDefaults() {

@@ -15,7 +15,7 @@ class DetailTableViewCell: UITableViewCell {
     @IBOutlet weak var lblPressure: UILabel!
     @IBOutlet weak var lblHumidity: UILabel!
     @IBOutlet weak var lblWindSpeed: UILabel!
-    @IBOutlet weak var lblWindDegree: UILabel!
+    @IBOutlet weak var imvWindDirection: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,10 +25,11 @@ class DetailTableViewCell: UITableViewCell {
 
     public func configure(with weather: Weather) {
         
-        lblTemp.text = "\(weather.temperature)℃"
-        lblPressure.text = "\(weather.pressure)"
-        lblHumidity.text = "\(weather.pressure)%"
-        lblWindSpeed.text = "\(weather.windSpeed)m/s"
-        lblWindDegree.text = "\(weather.windDeg)°"
+        lblTemp.text = "\(weather.temperature) ℃"
+        lblPressure.text = "\(weather.pressure) mbar"
+        lblHumidity.text = "\(weather.humidity) %"
+        lblWindSpeed.text = "\(weather.windSpeed) m/s"
+        let angle = CGFloat(weather.windDeg) / 180.0 * CGFloat.pi
+        imvWindDirection.transform = CGAffineTransform(rotationAngle: angle)
     }
 }
